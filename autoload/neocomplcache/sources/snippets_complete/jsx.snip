@@ -1,0 +1,80 @@
+
+snippet main
+abbr    main function
+    class _Main{
+        static function main(args : string[]) : void {
+            ${0}
+        }
+    }
+
+snippet    class
+abbr    class
+    class ${1:name} {
+        ${0}
+    }
+
+snippet    interface
+abbr    interface
+    interface ${1:name} {
+        ${0}
+    }
+
+snippet abstract_func
+abbr    abstract func
+    abstract function ${1:func}(${2}) : ${3:void};
+
+snippet constructor
+abbr    constructor
+    function constructor(${1}) {
+        ${0}
+    }
+
+snippet func
+abbr    function
+    function ${1:func}(${2}) : ${3:void} {
+        ${0}
+    }
+
+snippet lambda
+abbr    lambda
+    (${1}) : ${2} -> ${}
+
+snippet closure
+abbr    closure
+    function (${1}) : ${2:void} {
+        ${0}
+    }
+
+snippet import
+abbr    import
+    import "${0}"
+
+snippet for
+abbr    for
+    for (${1}; ${2}; ${3}) {
+        ${0}
+    }
+
+snippet switch
+abbr    switch
+    switch (${1}) {
+        ${0}
+    }
+
+snippet case
+abbr    case
+    case ${1}:
+        ${2}
+
+snippet if
+abbr    if
+    if (${1}) {
+        ${0}
+    }
+
+snippet else
+abbr    else
+    else {
+        ${0}
+    }
+
